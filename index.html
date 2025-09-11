@@ -3,182 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
+    <meta name="description" content="Personal portfolio of [Your Name]">
+    <title>[Your Name]'s Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to Leouel's Portfolio</h1>
+        <h1>Welcome to Leouel Picazo's Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#interests">Interests</a></li>
                 <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section id="about">
+        <main> <section id="about">
             <h2>About Me</h2>
-            <p>Hi! I'm a student at the University of Baguio studying Computer Science. I'm excited to learn web development!</p>
-        </section>
+                <p>Hi! I'm a student at University of Baguio studying Computer Science.</p>
+                <h2>Media</h2>
+                 <p>Here's a short video introduction:</p>
+                 <video width="320" height="240" controls>
+                <source src="c:/Users/picazo_l/Downloads/IMG_2959.MOV" type="video/mp4">
+                 Your browser does not support the video tag.
+    </video>
+        <p>I am <strong>passionate</strong> about learning new technologies.</p>
+        <p>My favorite quote is: <em>"You already have wings, all you have to do is fly."</em></p>
+        <p>You can contact me at <mark>20172160@s.ubaguio.edu</mark></p>
+        <h2>My Photo</h2>
+    <img src="file:///C:/Users/picazo_l/Downloads/IMG_2721.jpg" alt="Photo of Leouel" width="200" height="200">
+    <h2>My Favorite Place</h2>
+    <img src="file:///C:/Users/picazo_l/Downloads/wcc-aviation-binalonan-pangasinan-hangar-02.webp" 
+     alt="RPT-20" width="300" height="200">
 
-        <section id="interests">
-            <h2>My Interests</h2>
-            <p>I enjoy playing the guitar, driving, and I want to fly a plane.</p>
-        </section>
+     <h2>Fun Facts About Me</h2>
+     <ul>
+         <li>I can <strong>speak 2</strong> languages</li>
+         <li>My favorite food is <em>Steak</em></li>
+         <li>I've visited <mark>0</mark> different countries/states</li>
+     </ul>
+     <section id="interests">
+        <h2>My Interests</h2>
+        <p>I enjoy playing the guitar, driving, and i want to fly a plane.</p>
+    </section>
+    <h2>My Class Schedule</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
 
-        <section id="goals">
-            <h3>Academic Goals</h3>
-            <p>This semester, I hope to pass all of my subjects.</p>
-        </section>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00 AM</td>
+                <td>PROGIT1</td>
+                <td>LITERA1</td>
+                <td>PROGIT1</td>
+                <td>LITERA1</td>
+                <td>VACANT</td>
 
-        <section id="quotes">
-            <p>I am <strong>passionate</strong> about learning new technologies.</p>
-            <p>My favorite quote is: <em>"You already have wings, all you have to do is fly."</em></p>
-        </section>
+            </tr>
+            <tr>
+                <td>10:00 AM</td>
+                <td>INTRCS1</td>
+                <td>VACANT</td>
+                <td>INTRCS1</td>
+                <td>VACANT</td>
+                <td>VACANT</td>
+            </tr>
+            <tr> 
+                <td>11:00 AM</td>
+                <td>HUMCOM1</td>
+                <td>INTRS1 LAB</td>
+                <td>HUMCOM1</td>
+                <td>INTRCS1 LAB</td>
+                <td>VACANT</td>
+            </tr>
+            <tr> 
+                <td>12:00 PM</td>
+                <td>ARTAPP1</td>
+                <td>INTCS1 LAB</td>
+                <td>ARTAPP1</td>
+                <td>INTRCS1 LAB</td>
+                <td>VACANT</td>
+            </tr>
+            <tr> 
+                <td>01:00 PM</td>
+                <td>VACANT</td>
+                <td>INTRCS1 LAB</td>
+                <td>VACANT</td>
+                <td>HUMCOM1 LAB</td>
+                <td>VACANT</td>
+            </tr>
+            <tr> 
+                <td>02:00 PM</td>
+                <td>PROGIT1</td>
+                <td>VACANT</td>
+                <td>PROGIT1</td>
+                <td>VACANT</td>
+                <td>CMPTRB1</td>
+            </tr>
+            <tr> 
+                <td>05:00 PM</td>
+                <td>PROGIT1</td>
+                <td>VACANT</td>
+                <td>PROGIT1</td>
+                <td>VACANT</td>
+                <td>CPMTRB1</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>You can contact me at <mark>20172160@s.ubaguio.edu</mark></p>
+    <section id="contact">  
+        
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+            <label for="year">Academic Year:</label><br>
+            <select id="year" name="year">
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+            </select><br><br>
+            
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
 
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-
-                <label for="year">Academic Year:</label><br>
-                <select id="year" name="year">
-                    <option value="freshman">Freshman</option>
-                    <option value="sophomore">Sophomore</option>
-                    <option value="junior">Junior</option>
-                    <option value="senior">Senior</option>
-                </select><br><br>
-
-                <input type="submit" value="Send Message">
-            </form>
-        </section>
-
-        <section>
-            <h2>My Favorite Subjects</h2>
-            <ul>
-                <li>Mathematics</li>
-                <li>Computer Science</li>
-                <li>Physics</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>My Daily Schedule</h2>
-            <ol>
-                <li>Wake up at 7:00 AM</li>
-                <li>Attend morning classes</li>
-                <li>Study in the library</li>
-                <li>Exercise or relax</li>
-                <li>Evening study time</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Useful Links</h2>
-            <p>Visit my university's website: <a href="https://ubaguio.edu/">University Homepage</a></p>
-            <p>Check out this helpful resource: <a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial</a></p>
-        </section>
-
-        <section>
-            <h2>My Photo</h2>
-            <img src="file:///C:/Users/picazo_l/Downloads/IMG_2721.jpg" alt="Photo of Leouel" width="200" height="200">
-        </section>
-
-        <section>
-            <h2>My Favorite Place</h2>
-            <img src="file:///C:/Users/picazo_l/Downloads/wcc-aviation-binalonan-pangasinan-hangar-02.webp" 
-                 alt="RPT-20" width="300" height="200">
-        </section>
-
-        <section>
-            <h2>My Class Schedule</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Time</th>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>8:00 AM</td>
-                        <td>PROGIT1</td>
-                        <td>LITERA1</td>
-                        <td>PROGIT1</td>
-                        <td>LITERA1</td>
-                        <td>VACANT</td>
-                    </tr>
-                    <tr>
-                        <td>10:00 AM</td>
-                        <td>INTRCS1</td>
-                        <td>VACANT</td>
-                        <td>INTRCS1</td>
-                        <td>VACANT</td>
-                        <td>VACANT</td>
-                    </tr>
-                    <tr>
-                        <td>11:00 AM</td>
-                        <td>HUMCOM1</td>
-                        <td>INTRS1 LAB</td>
-                        <td>HUMCOM1</td>
-                        <td>INTRCS1 LAB</td>
-                        <td>VACANT</td>
-                    </tr>
-                    <tr>
-                        <td>12:00 PM</td>
-                        <td>ARTAPP1</td>
-                        <td>INTCS1 LAB</td>
-                        <td>ARTAPP1</td>
-                        <td>INTRCS1 LAB</td>
-                        <td>VACANT</td>
-                    </tr>
-                    <tr>
-                        <td>01:00 PM</td>
-                        <td>VACANT</td>
-                        <td>INTRCS1 LAB</td>
-                        <td>VACANT</td>
-                        <td>HUMCOM1 LAB</td>
-                        <td>VACANT</td>
-                    </tr>
-                    <tr>
-                        <td>02:00 PM</td>
-                        <td>PROGIT1</td>
-                        <td>VACANT</td>
-                        <td>PROGIT1</td>
-                        <td>VACANT</td>
-                        <td>CMPTRB1</td>
-                    </tr>
-                    <tr>
-                        <td>05:00 PM</td>
-                        <td>PROGIT1</td>
-                        <td>VACANT</td>
-                        <td>PROGIT1</td>
-                        <td>VACANT</td>
-                        <td>CPMTRB1</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-    </main>
-
+     
+    
     <footer>
         <p>&copy; 2025 Leouel Picazo. All rights reserved.</p>
     </footer>
+    </main>
 </body>
 </html>
